@@ -35,3 +35,24 @@ const carro = {
     }
 };
 
+carro.proprietario.endereco;
+
+carro['proprietario']['endereco']['logradouro'] = 'Av Gigante';
+
+console.log(carro);
+
+delete carro.condutores;
+
+delete carro.proprietario.endereco;
+
+delete carro.calcularValorSeguro;
+
+console.log(carro);
+// Aqui da erro 
+// console.log(carro.condutores.length);
+
+//Aqui Não
+
+console.log(carro.condutores)
+
+
